@@ -1,0 +1,111 @@
+/* АУТЕНТИФИКАЦИЯ */
+
+#div_auth {
+	background-color: #83D4D3;
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;		
+
+	margin: 150px auto;
+	padding: 10px 5px;
+	width: 350px;
+  font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+
+  -webkit-box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+#div_prog_label {
+	text-align: right;
+	padding: 5px 10px;
+  text-shadow: 0 2px 2px #400;
+	color: #FFF;
+}
+
+#div_auth_caption {
+	text-align: center;
+	padding: 5px 0px;
+	font-size: 20px;
+}
+
+#div_auth_messenger{
+	margin:10px 5px;
+	padding: 10px;
+	border: gray dashed 1px;
+	background: pink;
+	display:none;
+}
+
+#div_auth fieldset {
+	padding: 20px 20px;
+	position: relative;
+}
+
+#tbl_input {
+  width: 100%;
+/*	border: red dashed 1px;*/
+}
+
+.td_auth_input {
+	padding: 5px 10px;
+	background-color: white;
+	border: gray 1px solid;
+}
+
+/*#div_auth fieldset input {*/
+#tbl_input input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	outline: none;
+  -webkit-appearance:none;
+  align: center;
+/*	padding: 5px 10px;*/
+/*	margin: 1px 0px;*/
+  position: center;
+  width: 100%;
+  height: 25px;
+/*	display: table-cell;*/
+/*  width: 280px;*/
+	text-align: left;
+/*	border: gray 1px solid;*/
+	border: none;
+
+}
+
+
+
+
+
+#div_auth_button {
+  text-align: center;
+	padding: 10px 0px;
+}
+
+#inp_auth_submit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	outline: none;
+  -webkit-appearance:none;
+  align: center;
+	padding: 10px 10px;
+  position: center;
+  width: 230px;
+}
+
+
+
+#div_auth_func {
+	margin: 5px 5px;
+}
+
+#div_auth_show_reg {
+	left: 0px;
+	color: blue;
+  text-align: left;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* АУТЕНТИФИКАЦИЯ END */
