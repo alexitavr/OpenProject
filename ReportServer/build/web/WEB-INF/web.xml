@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+    <servlet-name>start</servlet-name>
+    <servlet-class>javaapplication8.start</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    
+  <servlet>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>javaapplication8.Download</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Hello2</servlet-name>
+    <servlet-class>javaapplication8.DownloadTasksMain</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Hello2</servlet-name>
+    <url-pattern>/HelloServlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Hello3</servlet-name>
+    <servlet-class>javaapplication8.DownloadCountReport</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Hello3</servlet-name>
+    <url-pattern>/HelloServlet3</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+        <servlet-name>Dispatcher</servlet-name>
+        <servlet-class>Net.Dispatcher</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckUser</servlet-name>
+        <servlet-class>Net.CheckUser</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Dispatcher</servlet-name>
+        <url-pattern>/Dispatcher</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>CheckUser</servlet-name>
+        <url-pattern>/CheckUser</url-pattern>
+    </servlet-mapping>
+  
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>faces/welcomeJSF.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,12 @@
+CREATE OR REPLACE TRIGGER REPORTS_PARAMS_INS BEFORE INSERT ON REPORTS_PARAMS
+FOR EACH ROW
+   WHEN (new."PARMS_ID" IS NULL) BEGIN
+
+  --новый id параметра
+  SELECT REPORTS_PARAMS_SEQ.NEXTVAL INTO :new.PARMS_ID FROM DUAL;
+  --принудительные Upper названия параметра
+  :new.PARAM := Upper( :new.PARAM );
+
+
+END;
+/

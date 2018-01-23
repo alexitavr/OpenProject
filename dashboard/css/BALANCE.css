@@ -1,0 +1,7 @@
+.IMG {  display: none;
+        margin: 0 auto;      
+}
+.btnup {
+    position:relative;
+    top:-18px;
+}  
